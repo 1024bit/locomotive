@@ -28,24 +28,25 @@
       "url": "http://www.opensource.org/licenses/MIT"
     }
   ],
-  "bin" : {
-    "lcm" : "./bin/lcm.js"
+  "bin": {
+    "lcm": "./bin/lcm.js"
   },
   "main": "./lib",
   "dependencies": {
-    "pkginfo": "0.3.x",
-    "commander": "2.x.x",
-    "co-prompt": "1.x.x",
-    "express": "3.x.x",
     "actionrouter": "0.1.x",
     "bootable": "0.2.x",
     "bootable-environment": "0.2.x",
-    "parent-require": "1.x.x",
+    "co-prompt": "1.x.x",
+    "commander": "2.x.x",
+    "debug": "0.7.x",
+    "express": "4.x.x",
+    "mime": "^1.2.11",
     "mkdirp": "0.3.x",
+    "parent-require": "1.x.x",
+    "pkginfo": "0.3.x",
     "scripts": "0.1.x",
-    "utils-flatten": "1.x.x",
     "syntax-error": "0.0.1",
-    "debug": "0.7.x"
+    "utils-flatten": "1.x.x"
   },
   "devDependencies": {
     "mocha": "1.x.x",
