@@ -6,8 +6,7 @@ test-cov: test-istanbul-mocha
 view-cov: view-istanbul-report
 lint: lint-jshint
 lint-tests: lint-tests-jshint
-
-
+	
 # ==============================================================================
 # Node.js
 # ==============================================================================
@@ -20,6 +19,11 @@ include support/mk/istanbul.mk
 # ==============================================================================
 include support/mk/notes.mk
 include support/mk/jshint.mk
+
+# ==============================================================================
+# Compile
+# ==============================================================================
+include support/mk/coffee.mk
 
 # ==============================================================================
 # Reports
@@ -44,4 +48,4 @@ clean:
 clobber: clean clobber-node
 
 
-.PHONY: test test-cov view-cov lint lint-tests submit-cov-to-coveralls ci-travis clean clobber
+.PHONY: test test-cov view-cov lint lint-tests submit-cov-to-coveralls ci-travis clean clobber coffee
